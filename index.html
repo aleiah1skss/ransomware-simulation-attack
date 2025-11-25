@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ransomware Simulation Demo – Safe Educational Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🔐 Ransomware Simulation (Safe Demo)</h1>
+    <p>This dashboard demonstrates how ransomware encrypts files — but safely, locally, and with your permission.</p>
+
+    <div class="grid">
+        <!-- Encryption -->
+        <div class="card">
+            <h2>Encrypt a File</h2>
+            <input type="file" id="encryptFile">
+            <input type="password" id="encryptPass" placeholder="Enter passphrase">
+            <button onclick="encryptFile()">Encrypt</button>
+            <a id="downloadEncrypted"></a>
+        </div>
+
+        <!-- Decryption -->
+        <div class="card">
+            <h2>Decrypt a File</h2>
+            <input type="file" id="decryptFile">
+            <input type="password" id="decryptPass" placeholder="Enter passphrase">
+            <button onclick="decryptFile()">Decrypt</button>
+            <a id="downloadDecrypted"></a>
+        </div>
+
+        <!-- Explanation -->
+        <div class="card">
+            <h2>How Real Ransomware Works</h2>
+            <p><b>Real ransomware attack steps:</b></p>
+            <ul>
+                <li>1️⃣ Delivery (email, exploit, USB, etc.)</li>
+                <li>2️⃣ Persistence & spreading</li>
+                <li>3️⃣ File encryption (AES/RSA)</li>
+                <li>4️⃣ Deleting backups & shadow copies</li>
+                <li>5️⃣ Extortion screen demanding payment</li>
+            </ul>
+
+            <p><b>This demo simulates ONLY the encryption part.</b><br>
+               No malware behavior. No harm. No spreading.</p>
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
